@@ -1,0 +1,22 @@
+<h1 class="py-2">LANDING</h1>
+
+<p>Tabla de todos los students con sus respectivos e-mails</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
